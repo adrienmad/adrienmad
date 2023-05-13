@@ -1,16 +1,27 @@
 ### Hi there 👋
 
-<!--
-**adrienmad/adrienmad** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+# Adrienmad Website Portfolio
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+This repository contains the source code for my personal website portfolio. The website showcases my skills, experience, and projects.
+
+## Technologies Used
+
+The website is built using the following technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap framework
+- jQuery library
+- PHP
+
+## Usage
+
+To view the website, simply open the `index.php` file in your web browser. The website is also hosted on [GitHub Pages](https://adrienmad.github.io/adrienmad/).
+
+## Contributing
+
+If you notice any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Contributions are always welcome.
+
+

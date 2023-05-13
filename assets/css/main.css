@@ -49,19 +49,19 @@ html {
 }
 
 body {
-	font-family: Montserrat, sans-serif;
+	font-family: Montserrat, sans-serif!important;
 	font-size: 100%;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none!important;
 	transition: all .2s ease-in-out;
 }
 
-.btn {
-	border-radius: 27.5px;
+.btn-main {
+	border-radius: 10px;
 	display: inline-block;
 	font-size: .75rem;
 	font-weight: 500;
@@ -72,6 +72,87 @@ a {
 	text-transform: uppercase;
 	width: 220px;
 }
+
+#image-about-me{
+	background-image: url("../img/portrait.jpg");
+	background-color: #cccccc;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#anchor-button{
+	background-color: #212121;
+	color:#fff;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+
+.border-brand {
+	border-radius: 10px;
+}
+
+#email-subscribe{
+	background-color: #212529;
+	height: 400px;
+}
+
+.contact-form #email {
+	width: 100%;
+	border: 1px solid #f6b500;
+
+}
+
+.contact-form #submit{
+	float: none;
+	color: #000;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: .75rem;
+	font-weight: 500;
+	height: 55px;
+	letter-spacing: 2.5px;
+	line-height: 55px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 220px;
+}
+
+.contact-form #submit:hover{
+	color: #000;
+	background-color: #fff;
+}
+
+.contact-form #contact-page-btn:hover{
+	color: #fff;
+	background-color: #000;
+}
+
+.margin-top{
+	margin-top: 100px;
+}
+
+.cta_custom #kreako-link:before{
+	background-color: #000;
+}
+
+.contact-item{
+	height: 200px!important;
+}
+
+.contact-address{
+	text-transform: unset!important;
+}
+
+/*.sticky {*/
+/*	position: fixed;*/
+/*	top: 0;*/
+/*	width: 100%;*/
+/*}*/
+
 
 .contact-form input,
 .contact-form textarea {
@@ -132,6 +213,7 @@ a {
 	text-transform: uppercase;
 	transition: all .2s linear;
 	width: 220px;
+
 }
 
 .container {
@@ -153,6 +235,7 @@ a {
     object-fit: cover;
     height: 100%;
     width: 100%;
+	border-radius: 10px;
 }
 
 .img-responsive {
@@ -585,6 +668,9 @@ a {
 	font-family: Questrial, sans-serif;
 	padding: 170px 0;
 }
+#cta_02_padding {
+	padding: 100px 0;
+}
 
 .cta_02 h2 {
 	font-size: 3.75rem;
@@ -619,16 +705,38 @@ a {
 	width: 70px;
 }
 
-.cta_02 .cta-link:hover,
-.personal-portfolio .hero .cta-link:hover {
+.cta_custom .cta-link:hover {
 	padding-left: 120px;
 }
 
-.cta_02 .cta-link:hover:before,
-.personal-portfolio .hero .cta-link:hover:before {
+.cta_custom .cta-link:hover:before {
 	width: 90px;
 }
 
+.cta_custom .cta-link {
+	font-size: 1.5rem;
+	padding-left: 100px;
+	position: relative;
+	transition: padding-left .3s linear;
+}
+
+.cta_custom .cta-link:before {
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: 12px;
+	transition: width .3s linear;
+	width: 70px;
+}
+
+.cta_custom .cta-link:hover {
+	padding-left: 120px;
+}
+
+.cta_custom .cta-link:hover:before {
+	width: 90px;
+}
 
 /* =============== # Clients =============== */
 
@@ -638,12 +746,18 @@ a {
 	display: flex;
 }
 
+#skills {
+	margin-top: 40px;
+	height: unset;
+}
+
 .clients .item {
 	float: left;
-	text-align: center;
+	text-align: left;
 	margin: 6px 2.5% 0 0;
 	width: 23.125%;
 }
+
 
 .clients .item:nth-of-type(4) {
 	margin-right: 0;
@@ -663,6 +777,19 @@ a {
 
 .clients .item:nth-of-type(4) img {
 	width: 72px;
+}
+.clients .item:nth-of-type(5) img {
+	width: 77px;
+}
+.clients .item:nth-of-type(6) img {
+	width: 77px;
+}
+.clients .item:nth-of-type(7) img {
+	width: 77px;
+}
+
+.resize-skill-width {
+	width: 77px!important;
 }
 
 /* =============== # Call To Action =============== */
@@ -709,7 +836,7 @@ footer ul {
 }
 .footer-default-inverse-border {
 	border-top: 1px solid #333;
-	height: 101px;
+	height: 120px;
 }
 
 .footer-extended .info {
@@ -1335,6 +1462,7 @@ footer ul {
 	height: 370px;
 	text-align: center;
 	width: 31.666%;
+	border-radius: 10px;
 }
 
 .services_01 .item .wrapper {
@@ -1416,14 +1544,15 @@ footer ul {
 /* =============== # About Me =============== */
 
 .about-me {
-	margin-bottom: 136px;
+	/*margin-bottom: 136px;*/
 }
 
 .about-me .image {
 	float: left;
-	height: 770px;
+	height: 790px;
 	margin-right: 5%;
 	width: 49%;
+	margin-top: 60px;
 }
 
 .about-me .content {
@@ -1435,7 +1564,7 @@ footer ul {
 	font-family: Questrial, sans-serif;
 	font-size: 2.7rem;
 	font-weight: normal;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 }
 
 .about-me p {
@@ -1457,7 +1586,7 @@ footer ul {
 }
 
 .about-me .intro {
-	margin: 70px 0 37px 0;
+	margin: 50px 0 37px 0;
 }
 
 .about-me .intro h2,
@@ -1536,6 +1665,15 @@ footer ul {
 	width: 48.75%;
 }
 
+.about-us .kreako-link {
+	float: right;
+	font-size: 1.5rem;
+	letter-spacing: .2px;
+	line-height: 1.7;
+	margin-top: 13px;
+	width: 48.75%;
+}
+
 /* =============== # Agency Minimal =============== */
 
 .agency-minimal .intro {
@@ -1561,7 +1699,14 @@ footer ul {
 
 .agency-modern .hero {
 	align-items: center;
-	background: url('../img/img-placeholder.png');
+	/*background:*/
+	/*		linear-gradient(*/
+	/*				rgba(0, 0, 0, 0.7),*/
+	/*				rgba(0, 0, 0, 0.7)*/
+	/*		),*/
+	/*			!* bottom, image *!*/
+	/*		url(../img/hero-desktop-1.png);*/
+	background: url('../img/hero-desktop-1.png');
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
@@ -1580,7 +1725,7 @@ footer ul {
 }
 
 .agency-modern .hero .content {
-	text-align: center;
+	text-align: left;
 	margin-top: 50px;
 }
 

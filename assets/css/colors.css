@@ -18,8 +18,39 @@ Table of Contents
 - # background #0602e8
 - # color #2179f9
 
-------------------------------------------------------*/
 
+------------------------------------------------------
+#custom css
+------------------------------------------------------*/
+#btn-contact {
+	background-color: #f6b500;
+	color: #000000;
+}
+#btn-contact:hover{
+	background-color: #fff;
+}
+
+#btn-readmore {
+	background-color: #f6b500;
+	color: #000000;
+}
+#btn-readmore:hover{
+	background-color: #fff;
+}
+
+#anchor-button:hover{
+	background-color: #f6b500;
+	color: #000;
+}
+
+.brand-hover:hover{
+	color: #000;
+}
+
+.brand-color {
+	color: #f6b500!important;
+	opacity: 95%;
+}
 /*-----------------------------------------------------
 # color #000
 ------------------------------------------------------*/
@@ -53,8 +84,8 @@ Table of Contents
 .full-screen-nav .coll-nav-sub-item a:after,
 .contact-form input[type=submit],
 .project-description h2 span:after,
-.btn:hover {
-	background: #000;
+.btn-main:hover {
+	background: #f6b500;
 }
 
 /*-----------------------------------------------------
@@ -147,12 +178,12 @@ Table of Contents
 .tag-links a:hover,
 .share-links li:hover a,
 .contact-form input[type=submit],
-.btn,
+.btn-main,
 .agency-modern .about .info .content,
 .cta_01 h2,
 .footer-inverse,
 .footer-inverse .follow-us-links li a,
-.btn:hover {
+.btn-main:hover {
 	color: #fff;
 }
 
@@ -164,7 +195,7 @@ Table of Contents
 .full-screen-nav,
 .team-member .overlay,
 .portfolio-item-overlay,
-.cta_01 .btn:hover {
+.cta_01 .btn-main:hover {
 	background: #fff;
 }
 
@@ -182,9 +213,10 @@ Table of Contents
 .mail-link,
 .follow-us-links li a:hover,
 .agency-minimal .intro h2,
-.cta_01 .btn:hover {
-	color: #0260e8;
+.cta_01 .btn-main:hover {
+	color: #f6b500;
 }
+
 
 /*-----------------------------------------------------
 # background #0260e8
@@ -196,10 +228,11 @@ Table of Contents
 .share-links li:hover,
 .contact-form input[type=submit]:hover,
 .cta_02 .cta-link:before,
+.cta_custom .cta-link:before,
 .personal-portfolio .hero .cta-link:before,
-.btn,
+.btn-main,
 .mail-link:after {
-	background: #0260e8;
+	background: #f6b500;
 }
 
 /*-----------------------------------------------------
@@ -208,4 +241,10 @@ Table of Contents
 
 .agency-modern .about .info .content h3 {
 	color: #2179f9;
+}
+
+
+/*overlay portfolio*/
+.hover-color{
+	background-color: #E8AB05;
 }
